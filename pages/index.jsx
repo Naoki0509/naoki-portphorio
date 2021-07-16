@@ -14,43 +14,42 @@ export default function Home() {
 			</Head>
 			<Header />
 
-			<main className={styles.main}>
-				<h1 className={styles.title}>Index Page</h1>
+			{/* <Image src="/main-picture-1.jpg" layout="fill" /> */}
 
-				<p className={styles.description}>
-					Get started by editing{" "}
-					<code className={styles.code}>pages/index.js</code>
-				</p>
+			<main className={styles.main} class="">
+				<section class="bg-purple-200 w-full h-2/4">
+					<h1 class="text-6xl">Profile</h1>
+					<div class="text-4xl">
+						<h3>Name: Naoki Hayashida</h3>
+						<h3>19 years old</h3>
+						<h3>From: Yokohama,Japan</h3>
+					</div>
+				</section>
 
-				<div className={styles.grid}>
-					<a href="https://nextjs.org/docs" className={styles.card}>
-						<h2>Documentation &rarr;</h2>
-						<p>Find in-depth information about Next.js features and API.</p>
-					</a>
+				<section class="bg-blue-100">
+					<h1>技術紹介</h1>
+					<div>
+						<div>
+							<h2>HTML</h2>
+						</div>
+						<div>
+							<h2>CSS</h2>
+						</div>
+						<div>
+							<h2>Javascrpt</h2>
+						</div>
+						<div>
+							<h2>React</h2>
+						</div>
+						<div>
+							<h2>Tailwind css</h2>
+						</div>
+					</div>
+				</section>
 
-					<a href="https://nextjs.org/learn" className={styles.card}>
-						<h2>Learn &rarr;</h2>
-						<p>Learn about Next.js in an interactive course with quizzes!</p>
-					</a>
-
-					<a
-						href="https://github.com/vercel/next.js/tree/master/examples"
-						className={styles.card}
-					>
-						<h2>Examples &rarr;</h2>
-						<p>Discover and deploy boilerplate example Next.js projects.</p>
-					</a>
-
-					<a
-						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-						className={styles.card}
-					>
-						<h2>Deploy &rarr;</h2>
-						<p>
-							Instantly deploy your Next.js site to a public URL with Vercel.
-						</p>
-					</a>
-				</div>
+				<section>
+					<h1>Contact</h1>
+				</section>
 			</main>
 			<Footer />
 		</div>
