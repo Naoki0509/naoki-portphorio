@@ -14,40 +14,76 @@ export default function Home() {
 			</Head>
 			<Header />
 
-			<main className={styles.main} class="flex flex-col flex-1">
-				<section class="bg-purple-200 w-full h-2/4">
-					<h1 class="text-6xl">Profile</h1>
-					<div class="text-2xl py-8">
-						<h3 class="py-1">Name: Naoki Hayashida</h3>
-						<h3 class="py-1">19 years old</h3>
-						<h3 class="py-1">From: Yokohama,Japan</h3>
+			<main class="flex flex-col flex-1">
+				<div class="bg-gray-100 w-full h-2/4 ">
+					<h1 class="text-center text-6xl pt-10">Profile</h1>
+					<div class="text-2xl pl-24 pt-14">
+						<h3 class="py-1">Naoki Hayashida</h3>
+						<h3 class="py-1">2002.05.09</h3>
+						<h3 class="py-1">Yokohama,Japan</h3>
 					</div>
-				</section>
+				</div>
 
-				<section class="bg-blue-100 w-full h-2/4">
-					<h1 class="text-6xl">技術紹介</h1>
-					<div class="flex flex-row py-8">
+				<div class=" w-full h-3/5">
+					<h1 class="text-6xl text-center pb-16 pt-10">Skill Set</h1>
+					<div class=" py-8 flex flex-row content-center justify-center ">
 						<div class="px-8">
-							<h2>HTML</h2>
+							<Image
+								src={"/HTML picture.png"}
+								objectFit="contain"
+								alt="HTML Picture"
+								width="120px"
+								height="120px"
+							/>
+							<h2 class="text-center">HTML</h2>
 						</div>
 						<div class="px-8">
-							<h2>CSS</h2>
+							<Image
+								src={"/CSS picture.png"}
+								alt="CSS Picture"
+								objectFit="contain"
+								width="120px"
+								height="120px"
+							/>
+							<h2 class="text-center">CSS</h2>
 						</div>
 						<div class="px-8">
-							<h2>Javascrpt</h2>
+							<Image
+								src={"/Javascript .png"}
+								alt="Javascript Picture"
+								objectFit="contain"
+								width="120px"
+								height="120px"
+							/>
+							<h2 class="text-center">Javascrpt</h2>
 						</div>
 						<div class="px-8">
-							<h2>React</h2>
+							<Image
+								src={"/React Picture.png"}
+								alt="React Picture"
+								objectFit="contain"
+								width="120px"
+								height="120px"
+							/>
+							<h2 class="text-center">React</h2>
 						</div>
 						<div class="px-8">
-							<h2>Tailwind css</h2>
+							<Image
+								src={"/Tailwindcss pic-2.png"}
+								alt="Tailwindcss picture"
+								objectFit="contain"
+								width="120"
+								height="120"
+								class="items-center"
+							/>
+							<h2 class="text-center">Tailwind css</h2>
 						</div>
 					</div>
-				</section>
+				</div>
 
-				<section>
+				<div>
 					<h1>Contact</h1>
-				</section>
+				</div>
 			</main>
 			<Footer />
 		</div>
