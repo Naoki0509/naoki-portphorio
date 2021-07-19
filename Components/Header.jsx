@@ -1,10 +1,9 @@
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
 export function Header() {
 	return (
 		<div class="bg-gray-200 w-full p-3 font-serif">
-			<header className={styles.header}>
+			<header>
 				<div>
 					<ul class="inline-flex space-x-36">
 						<li class="flex-1">
